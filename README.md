@@ -41,6 +41,12 @@ If you have already configured your `.env` files and MySQL database, you can sta
 # In a separate terminal, start the Next.js frontend
 cd dashboard/nextjs
 npm run dev
+
+
+
+# Important instruction
+
+Please add a.env file with required values before deploying this app.
 ```
 
 - Frontend UI: `http://localhost:3000`
