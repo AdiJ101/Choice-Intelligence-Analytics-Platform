@@ -1,0 +1,50 @@
+[build-system]
+requires = ["setuptools>=70.0", "wheel"]
+build-backend = "setuptools.backends.legacy:build"
+
+[project]
+name = "customer-intelligence-analytics-platform"
+version = "0.1.0"
+description = "Database & Sync Pipeline for Customer Intelligence & Analytics Platform"
+requires-python = ">=3.11"
+
+dependencies = [
+    "mysql-connector-python==8.3.0",
+    "qdrant-client==1.9.1",
+    "transformers==4.41.0",
+    "torch==2.3.0",
+    "sentence-transformers==3.0.1",
+    "python-dotenv==1.0.1",
+    "google-api-python-client==2.131.0",
+    "tweepy==4.14.0",
+    "requests==2.32.3",
+    "fastapi==0.111.0",
+    "uvicorn[standard]==0.29.0",
+    "streamlit==1.35.0",
+    "plotly==5.22.0",
+    "pandas==2.2.2",
+    "langdetect==1.0.9",
+    "tavily-python==0.3.3",
+    "yt-dlp==2024.5.27",
+    "firecrawl-py==2.9.0",
+    "instagrapi==2.4.5",
+    "linkedin-api==2.1.1",
+    "facebook-scraper==0.2.59",
+    "twikit==2.3.3",
+]
+
+[project.optional-dependencies]
+dev = [
+    "hypothesis==6.103.0",
+    "pytest==8.2.1",
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["src*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+python_classes = ["Test*"]
+python_functions = ["test_*"]

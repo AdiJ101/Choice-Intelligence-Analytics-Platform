@@ -1,0 +1,52 @@
+{
+  "scraping_config": {
+    "scraping_interval_minutes": 60,
+    "max_new_content_per_handle_per_iteration": 100,
+    "cooling_time_days": 90,
+    "post_collection_days": 90
+  },
+  "categories": [
+    {
+        "name": "Choice TechLab",
+        "handles": {
+        "youtube": "https://www.youtube.com/@ChoiceTechLab"
+        }
+    },
+    {
+        "name": "Choice Equity Broking",
+        "handles": {
+        "youtube": "https://www.youtube.com/@ChoiceHQ?sub_confirmation=1"
+        }
+    },
+    {
+        "name": "Choice Insurance",
+        "handles": {
+        "youtube": "https://www.youtube.com/@ChoiceInsurance_hq"
+        }
+    },
+    {
+        "name": "Choice Finserv",
+        "handles": {
+        "youtube": "https://www.youtube.com/@Choice_Finserv"
+        }
+    },
+    {
+        "name": "Choice Capital",
+        "handles": {
+        "youtube": "https://www.youtube.com/@ChoiceCapitalPvtLtd"
+        }
+    },
+    {
+        "name": "Choice Connect",
+        "handles": {
+        "youtube": "https://www.youtube.com/channel/UCy3RBk3rrAq3T3sJv_k9jJQ"
+        }
+    },
+    {
+        "name": "Choice Wealth",
+        "handles": {
+        "youtube": "https://www.youtube.com/@choicewealthsocial"
+        }
+    }
+  ]
+}
